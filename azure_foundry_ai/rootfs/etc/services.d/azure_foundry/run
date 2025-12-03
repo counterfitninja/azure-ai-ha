@@ -1,0 +1,3 @@
+#!/usr/bin/with-contenv bashio
+bashio::log.info "Starting Azure Foundry AI service..."
+exec python3 /usr/bin/azure_foundry_service.py

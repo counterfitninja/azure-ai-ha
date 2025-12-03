@@ -1,0 +1,25 @@
+{
+  "name": "Azure Foundry AI",
+  "version": "1.0.0",
+  "slug": "azure_foundry_ai",
+  "description": "Use Azure AI Foundry for Home Assistant voice with TTS, STT and Chat",
+  "arch": ["amd64", "armv7", "armhf", "aarch64"],
+  "startup": "services",
+  "boot": "auto",
+  "ports": {
+    "8080/tcp": 8080
+  },
+  "options": {
+    "azure_endpoint": "",
+    "api_key": "",
+    "deployment_name": "",
+    "tts_voice": "alloy"
+  },
+  "schema": {
+    "azure_endpoint": "str",
+    "api_key": "str",
+    "deployment_name": "str",
+    "tts_voice": "str"
+  },
+  "image": "ghcr.io/home-assistant/{arch}-addon-azure-foundry-ai"
+}
